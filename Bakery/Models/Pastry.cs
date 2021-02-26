@@ -24,5 +24,9 @@ namespace PastrySpace.Models
       returnedPrice -= threeFerDiscount;
       return returnedPrice;
     }
+    public static int ReturnBasePastryPrice()
+    {
+      return 0;
+    }
   }
 }
