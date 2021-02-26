@@ -17,7 +17,11 @@ namespace PastrySpace.Models
     }
     public static int ApplyPastryDeals(int numPastry, int pricePastries)
     {
-      return 0;
+      //buy 3 for a dollar off
+      int returnedPrice = pricePastries;
+      int threeFerDiscount = numPastry/3;
+      returnedPrice -= threeFerDiscount;
+      return returnedPrice;
     }
   }
 }
