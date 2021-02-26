@@ -48,5 +48,11 @@ namespace PastrySpace.Tests
       Console.WriteLine(expectedOutput2);
       Console.WriteLine(actualOutput2);
     }
+    [TestMethod]
+    public void ReturnBasePastryPrice_ReturnsBasePriceOfPastries_Int()
+    {
+      int expectedOutput3 = 2;
+      Assert.AreEqual(expectedOutput3, Pastry.ReturnBasePastryPrice());
+    }
   }
 }
