@@ -6,7 +6,7 @@ namespace PastrySpace.Models
   public class Pastry
   {
     public int PastryNumber {get; set;}
-        public Pastry(int pastries)
+    public Pastry(int pastries)
     {
       PastryNumber = pastries;
     }
