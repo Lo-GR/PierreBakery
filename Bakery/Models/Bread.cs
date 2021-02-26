@@ -27,5 +27,9 @@ namespace BreadSpace.Models
       returnedPrice -= bOGODiscount;
       return returnedPrice;
     }
+    public static int ReturnBaseBreadPrice()
+    {
+      return 0;
+    }
   }
 }
