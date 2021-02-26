@@ -29,7 +29,7 @@ namespace BreadSpace.Models
     }
     public static int ReturnBaseBreadPrice()
     {
-      return 0;
+      return _basePrice;
     }
   }
 }
