@@ -26,7 +26,7 @@ namespace PastrySpace.Models
     }
     public static int ReturnBasePastryPrice()
     {
-      return 0;
+      return _basePrice;
     }
   }
 }
