@@ -11,8 +11,7 @@ namespace PastrySpace.Models
     public Pastry(int pastries)
     {
       PastryNumber = pastries;
-      PastryPrice = 0;
-      // ApplyPastryDeals(pastries, ReturnPastryPrice(pastries));
+      PastryPrice = ApplyPastryDeals(pastries, ReturnPastryPrice(pastries));
     }
     public static int ReturnPastryPrice(int numPastries)
     {
