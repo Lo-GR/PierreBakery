@@ -9,5 +9,9 @@ namespace BreadSpace.Models
     {
       return numBread * 5;
     }
+    public static int ApplyBreadDeals(int numBreads, int priceBreads)
+    {
+      return 5;
+    }
   }
 }
