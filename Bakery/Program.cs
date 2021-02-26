@@ -34,5 +34,25 @@ namespace Bakery
         Console.WriteLine($"Perfect! You added {breadInput} loaves of bread to your order.");
       }
     }
+    public static void AskPastry()
+    {
+      Console.WriteLine("How many Pastries would you like? We're currently running a buy 3 for $5 deal.");
+      int pastryInput = int.Parse(Console.ReadLine());
+      if (pastryInput == 0)
+      {
+        Console.WriteLine("No problem!");
+      }
+      else if (pastryInput < 0)
+      {
+        Console.WriteLine("Please enter a number from 0.");
+        AskPastry();
+      }
+      else
+      {
+        Pastry pastryOrder = new Pastry(pastryInput);
+        Console.WriteLine($"Perfect! You added {pastryInput} loaves of bread to your order.");
+      }
+    }
+    
   }
 }
