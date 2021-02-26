@@ -7,7 +7,7 @@ namespace BreadSpace.Models
   {
     public static int ReturnBreadPrice(int numBread)
     {
-      return 5;
+      return numBread * 5;
     }
   }
 }

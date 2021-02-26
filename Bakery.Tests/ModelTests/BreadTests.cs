@@ -13,7 +13,7 @@ namespace BreadSpace.Tests
       int numInput = 5; // 5 Breads
       int expectedOutput = 25; //25 dollars
       int actualOutput =  Bread.ReturnBreadPrice(numInput);
-      Assert.AreEqual(numInput, expectedOutput);
+      Assert.AreEqual(expectedOutput, actualOutput);
     }
   }
 }
