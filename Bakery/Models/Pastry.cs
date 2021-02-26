@@ -5,7 +5,7 @@ namespace PastrySpace.Models
 {
   public class Pastry
   {
-    private static int _basePrice = 5;
+    private static int _basePrice = 2;
     public int PastryNumber {get; set;}
     public Pastry(int pastries)
     {
@@ -13,7 +13,7 @@ namespace PastrySpace.Models
     }
     public static int ReturnPastryPrice(int numPastries)
     {
-      return numPastries * 2;
+      return numPastries * _basePrice;
     }
     public static int ApplyPastryDeals(int numPastry, int pricePastries)
     {

@@ -17,7 +17,7 @@ namespace BreadSpace.Models
     }
     public static int ReturnBreadPrice(int numBread)
     {
-      return numBread * 5;
+      return numBread * _basePrice;
     }
     public static int ApplyBreadDeals(int numBreads, int priceBreads)
     {
