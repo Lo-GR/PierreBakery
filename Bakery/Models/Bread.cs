@@ -5,7 +5,6 @@ namespace BreadSpace.Models
 {
   public class Bread
   {
-    public static int BasePrice {get; set;}
     private static int _basePrice = 5;
     public static int ReturnBreadPrice(int numBread)
     {
@@ -13,6 +12,7 @@ namespace BreadSpace.Models
     }
     public static int ApplyBreadDeals(int numBreads, int priceBreads)
     {
+      //buy one get one deal
       int returnedPrice = priceBreads;
       int bOGOBreadAmount = numBreads/2;
       int bOGODiscount = _basePrice * bOGOBreadAmount;

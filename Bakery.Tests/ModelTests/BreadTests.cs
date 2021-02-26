@@ -8,6 +8,12 @@ namespace BreadSpace.Tests
   public class BreadTests
   {
     [TestMethod]
+    public void BreadConstructor_CreatesInstanceOfBread_Bread()
+    {
+      Bread newBread = new Bread(5);
+      Assert.AreEqual(typeof(Bread), newBread.GetType());
+    }
+    [TestMethod]
     public void ReturnBreadPrice_ReturnIntGivenNumberOfBreads_IntToInt()
     {
       int numInput = 5; // 5 Breads
