@@ -11,7 +11,8 @@ namespace BreadSpace.Tests
     public void ReturnBreadPrice_ReturnIntGivenNumberOfBreads_IntToInt()
     {
       int numInput = 5; // 5 Breads
-      int expectedOutput =  Bread.ReturnBreadPrice(5); // 25 dollars
+      int expectedOutput = 25; //25 dollars
+      int actualOutput =  Bread.ReturnBreadPrice(numInput);
       Assert.AreEqual(numInput, expectedOutput);
     }
   }
