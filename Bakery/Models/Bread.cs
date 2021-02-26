@@ -5,7 +5,13 @@ namespace BreadSpace.Models
 {
   public class Bread
   {
+    public int BreadNumber {get; set;}
     private static int _basePrice = 5;
+
+    public Bread(int breads)
+    {
+      
+    }
     public static int ReturnBreadPrice(int numBread)
     {
       return numBread * 5;
