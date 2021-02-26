@@ -12,6 +12,8 @@ namespace BreadSpace.Models
     public Bread(int breads)
     {
       BreadNumber = breads;
+      BreadPrice = ApplyBreadDeals(breads, ReturnBreadPrice(breads));
+
     }
     public static int ReturnBreadPrice(int numBread)
     {
