@@ -12,7 +12,7 @@ namespace PastrySpace.Models
     }
     public static int ReturnPastryPrice(int numPastries)
     {
-      return 0;
+      return numPastries * 2;
     }
   }
 }
