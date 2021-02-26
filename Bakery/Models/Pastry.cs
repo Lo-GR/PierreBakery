@@ -7,9 +7,11 @@ namespace PastrySpace.Models
   {
     private static int _basePrice = 2;
     public int PastryNumber {get; set;}
+    public int PastryPrice {get; set;}
     public Pastry(int pastries)
     {
       PastryNumber = pastries;
+      PastryPrice = 0;
     }
     public static int ReturnPastryPrice(int numPastries)
     {
