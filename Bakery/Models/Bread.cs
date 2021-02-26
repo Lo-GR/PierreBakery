@@ -10,7 +10,7 @@ namespace BreadSpace.Models
 
     public Bread(int breads)
     {
-      
+      BreadNumber = breads;
     }
     public static int ReturnBreadPrice(int numBread)
     {
