@@ -13,5 +13,13 @@ namespace PastrySpace.Tests
       Pastry newPastry = new Pastry(5);
       Assert.AreEqual(typeof(Pastry), newPastry.GetType());
     }
+    [TestMethod]
+    public void GetPastryAmount_ReturnsNumberOfPastries_int()
+    {
+      int expectedNumber = 5;
+      Pastry obj = new Pastry(expectedNumber);
+      int result = obj.PastryNumber;
+      Assert.AreEqual(expectedNumber, result);
+    }
   }
 }
