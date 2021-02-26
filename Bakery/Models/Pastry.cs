@@ -10,5 +10,9 @@ namespace PastrySpace.Models
     {
       PastryNumber = pastries;
     }
+    public static int ReturnPastryPrice(int numPastries)
+    {
+      return 0;
+    }
   }
 }

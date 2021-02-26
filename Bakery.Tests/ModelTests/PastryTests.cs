@@ -33,7 +33,7 @@ namespace PastrySpace.Tests
     public void ReturnPastryPrice_ReturnIntGivenNumberOfPastries_IntToInt()
     {
       int numInput = 5; // 5 Pastries
-      int expectedOutput = 25; //10 dollars
+      int expectedOutput = 10; //10 dollars
       int actualOutput =  Pastry.ReturnPastryPrice(numInput);
       Assert.AreEqual(expectedOutput, actualOutput);
     }
