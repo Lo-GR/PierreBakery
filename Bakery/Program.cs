@@ -7,13 +7,13 @@ namespace Bakery
 {
   public class Program
   {
-    public static List<Bread, Pastry> order = 
     public static void Main()
     {
       Console.WriteLine("Welcome to Pierre Bakery!");
       Console.WriteLine("We currently sell BREAD, just the one kind, and PASTRIES, also just one kind.");
       Console.WriteLine($"The current price for Bread is {Bread.ReturnBaseBreadPrice()} dollars each and the current price of Pastry is {Pastry.ReturnBasePastryPrice()} dollars each.");
       AskBread();
+      AskPastry();
     }
     public static void AskBread()
     {
@@ -21,7 +21,17 @@ namespace Bakery
       int breadInput = int.Parse(Console.ReadLine());
       if (breadInput == 0)
       {
-        Console
+        Console.WriteLine("No problem!");
+      }
+      else if (breadInput < 0)
+      {
+        Console.WriteLine("Please enter a number from 0.");
+        AskBread();
+      }
+      else
+      {
+        Bread breadOrder = new Bread(breadInput);
+        Console.WriteLine($"Perfect! You added {breadInput} loaves of bread to your order.");
       }
     }
   }
