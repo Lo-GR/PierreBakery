@@ -24,8 +24,8 @@ namespace PastrySpace.Tests
     [TestMethod]
     public void GetPastryPrice_ReturnsNumberFromCalculatedPrice_int()
     {
-      int expectedPrice = 15;
-      Pastry pastryObject = new Pastry(5);
+      int expectedPrice = 10;
+      Pastry pastryObject = new Pastry(6);
       int result = pastryObject.PastryPrice;
       Assert.AreEqual(expectedPrice, result);
     }
