@@ -37,5 +37,13 @@ namespace PastrySpace.Tests
       int actualOutput =  Pastry.ReturnPastryPrice(numInput);
       Assert.AreEqual(expectedOutput, actualOutput);
     }
+    public void ApplyPastryDeals_ReturnAdjustedPriceGivenNumberOfPastriesPrice_IntToInt()
+    {
+      int pastryQuantity = 5;
+      int pastryPrice = 10;
+      int expectedOutput = 9; //10 - 1, every third pastry drops price by 1 (3 for $5)
+      int actualOutput = Pastry.ApplyPastryDeals(pastryQuantity, pastryPrice);
+      Assert.AreEqual(expectedOutput, actualOutput);
+    }
   }
 }
