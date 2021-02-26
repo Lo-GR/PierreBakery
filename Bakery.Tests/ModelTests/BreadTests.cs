@@ -15,5 +15,14 @@ namespace BreadSpace.Tests
       int actualOutput =  Bread.ReturnBreadPrice(numInput);
       Assert.AreEqual(expectedOutput, actualOutput);
     }
+    [TestMethod]
+    public void ApplyBreadDeals_ReturnAdjustedPriceGivenNumberOfBreadsPrice_IntToInt()
+    {
+      int breadQuantity = 5;
+      int breadPrice = 25;
+      int expectedOutput = 15; //25 - 10 from BOGO
+      int actualOutput = Bread.ApplyBreadDeals(breadQuantity, breadPrice);
+      Assert.AreEqual(expectedOutput, actualOutput);
+    }
   }
 }
