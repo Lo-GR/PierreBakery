@@ -6,6 +6,7 @@ namespace BreadSpace.Models
   public class Bread
   {
     public int BreadNumber {get; set;}
+    public int BreadPrice {get; set;}
     private static int _basePrice = 5;
 
     public Bread(int breads)

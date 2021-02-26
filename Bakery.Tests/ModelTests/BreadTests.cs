@@ -22,6 +22,14 @@ namespace BreadSpace.Tests
       Assert.AreEqual(expectedNumber, result);
     }
     [TestMethod]
+    public void GetBreadPrice_ReturnsNumberFromCalculatedPrice_int()
+    {
+      int expectedPrice = 15;
+      Bread breadObject = new Bread(5);
+      int result = breadObject.BreadPrice;
+      Assert.AreEqual(expectedPrice, result);
+    }
+    [TestMethod]
     public void ReturnBreadPrice_ReturnIntGivenNumberOfBreads_IntToInt()
     {
       int numInput = 5; // 5 Breads
