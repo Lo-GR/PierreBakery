@@ -6,12 +6,6 @@
 
 <br/>
 
-```
-Current UI
-
-![image of UI](https://github.com/Lo-GR/PierreBakery/raw/main/img/currentUI.PNG?raw=true)
-
- ```
 ## _Technologies Used_
 
 * **C# 9**
