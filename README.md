@@ -15,9 +15,9 @@
 * **Repel**
 
 ## _Description_
-This an application built in C# with .NET 5.0 framework that will prompt the user through ordering Bread and Pastries then return those values and calculate the cost of each. On the business logic side, full 
+This an application built in C# with .NET 5.0 framework that will prompt the user through ordering Bread and Pastries then return those values and calculate the cost of each. On the business logic side, calculations are made automatically to account for deals and discounts.
 
-This is a practice project for practicing C#, SDK, .NET framework, and Classes for a course at Epicodus.
+This is a practice project for practicing C#, SDK, .NET framework,MS TEst, and Classes for a course at Epicodus.
 
 **To view Specs, visit the [ModelTests](https://github.com/Lo-GR/PierreBakery/tree/main/Bakery.Tests/ModelTests) section of GitHub**
 
@@ -25,10 +25,10 @@ This is a practice project for practicing C#, SDK, .NET framework, and Classes f
 
 > Repository: https://github.com/Lo-GR/PierreBakery.git
 1. Clone the above repository from Github.
-2. Navigate to the ToDoList.Tests directory in the terminal and run "dotnet restore" to build out test environment.
-3. In your terminal, navigate to ToDoList directory and run "dotnet build" to build application within directory. 
-4. In your terminal, while still in ToDoList directory, run "dotnet run" to run application within terminal. Follow the instructions outlined in the terminal.
-3. Open the project in your text editor to view the code.
+2. Navigate to the Bakery.Tests directory in the terminal and run "dotnet restore" to build out test environment.
+3. In your terminal, navigate to Bakery directory and run "dotnet build" to build application within directory. 
+4. In your terminal, while still in Bakery directory, run "dotnet run" to run application within terminal. Follow the instructions outlined in the terminal.
+5. Open the project in your text editor to view the code.
 
 
 ## _Known Bugs_
@@ -36,22 +36,43 @@ This is a practice project for practicing C#, SDK, .NET framework, and Classes f
 
 ## _Future Updates_
 * Additional UI
+* Additional Bread and Pastry options
 
-## _Preplanning/Whiteboard work_
+## _Preplanning/Whiteboard Work_
+
 ```
-Basic Start___
-- Taking a number between 0 and 99.
-- Split number into digits (1s, 10s, 100s).
-- Feed each number into a dictionary to return a text version of number.
-- Account for edge cases (Teens, eleven, twelve)
+Expectations___
 
-Dictionary Reqs___
-Dictionary will include the strings that we will be turning the numbers into.
+- There should be two classes: one for Bread and one for Pastry.
+- When the user runs the application, they should receive a prompt with a welcome message along with the cost for both Bread and Pastry.
+- A user should be able to specify how many loaves of Bread and how many Pastrys they'd like.
+- The application will return the total cost of the order.
+- Pierre offers the following deals:
 
-Methods___
-- A method that takes an integer as a argument and breaks it into 1s, 10s, 100s.
-- A method that takes stored properties and returns those properties as strings based on dictionary comparison.
-- A method that takes user inputted integer and calls upon other methods to return a string
+Bread Base Price = 5; BOGO offered
+Pastry base price = 2; 3 for 5.
+Every third pastry price adds a dollar discount
+All functionality for the models should be tested
+
+Need to add auto implemented properties somehow.
+
+Functionality___
+- Bread class should contain function that returns cost of bread.
+- Bread class should contain function that accounts for buy 2 deal.
+- Pastry class should contain a function that returns cost of pastry. 
+- Pastry should contain function that accounts for buy 3 deal.
+v-Stretch Goal-v
+- Shopping Cart class constructor which will take in Bread and Pastry information. 
+- Shopping cart will use auto implemented properties
+
+
+User Interface___
+This is the UI for the basic MVP.
+1. Introduction to bakery with prompts for prices
+2. Asks how many bread they would like. Receives number and creates Bread object with that amount.
+3. Asks how many pastries they would like. Receives number and creates Pastry object with that amount.
+4. Return price of Bread and price of pastry.
+5. Return total price of order.
 ```
 ## _License_
 
