@@ -8,7 +8,8 @@
 
 ```
 Current UI
-![image of UI](https://github.com/Lo-GR/PierreBakery/main/img/currentUI.PNG?raw=true)
+
+![image of UI](https://github.com/Lo-GR/PierreBakery/raw/main/img/currentUI.PNG?raw=true)
 
  ```
 ## _Technologies Used_
