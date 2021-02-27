@@ -62,7 +62,13 @@ namespace Bakery
     {
       if(breadOrder.BreadNumber > 0)
       {
-        
+        Console.WriteLine($"Bread Quantity: {breadOrder.BreadNumber}");
+        Console.WriteLine($"Cost of Bread: {breadOrder.BreadPrice}");
+      }
+      if(pastryOrder.PastryNumber > 0)
+      {
+        Console.WriteLine($"Pastry Quantity: {pastryOrder.PastryNumber}$");
+        Console.WriteLine($"Cost of Pastry: {pastryOrder.PastryPrice}$");
       }
     }
   }
