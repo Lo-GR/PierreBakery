@@ -1,28 +1,29 @@
-# **Number To Words Converter**
-### This is a terminal application that will convert numbers inputted to written word.
+# **Bakery Application**
+### This is a terminal application that will calculate the cost of items inputted by the user.
 
  ### _Contributor(s) and Contact Info_
 > Logan Roth diamondintheroth@gmail.com - [GitHub(Lo-GR)](https://github.com/Lo-GR)
-
-> Jonah Johansen johansenjonah+git@gmail.com - [GitHub](https://github.com/JJohan-work)
 
 <br/>
 
 ## _Technologies Used_
 
-* **Written in C#**
+* **C# 9**
 * **.NET 5.0.102**
 * **SDK 8.0.19**
 * **MS Test**
+* **Repel**
 
 ## _Description_
-This an application built in C# with .NET 5.0 framework that will prompt the user to enter a number up to the trillions and the program will convert that into written word (example: 100 -> one hundred);
+This an application built in C# with .NET 5.0 framework that will prompt the user through ordering Bread and Pastries then return those values and calculate the cost of each. On the business logic side, full 
 
 This is a practice project for practicing C#, SDK, .NET framework, and Classes for a course at Epicodus.
 
+**To view Specs, visit the [ModelTests](https://github.com/Lo-GR/PierreBakery/tree/main/Bakery.Tests/ModelTests) section of GitHub**
+
 ## _Use Guide_
 
-> Repository: https://github.com/Lo-GR/NumberToWords.git
+> Repository: https://github.com/Lo-GR/PierreBakery.git
 1. Clone the above repository from Github.
 2. Navigate to the ToDoList.Tests directory in the terminal and run "dotnet restore" to build out test environment.
 3. In your terminal, navigate to ToDoList directory and run "dotnet build" to build application within directory. 
@@ -56,6 +57,6 @@ Methods___
 
 [_MIT_](https://opensource.org/licenses/MIT)
 
-Copyright (c) 2021, Logan Roth, Jonah Johansen.
+Copyright (c) 2021, Logan Roth.
 
 Please contact Contributor for further use information or if you would like to make a contribution.
