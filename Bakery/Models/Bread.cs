@@ -7,12 +7,10 @@ namespace BreadSpace.Models
     public int BreadNumber {get; set;}
     public int BreadPrice {get; set;}
     private static int _basePrice = 5;
-
     public Bread(int breads)
     {
       BreadNumber = breads;
       BreadPrice = ApplyBreadDeals(breads, ReturnBreadPrice(breads));
-
     }
     public static int ReturnBreadPrice(int numBread)
     {

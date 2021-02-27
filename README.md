@@ -15,6 +15,8 @@
 * **Repel**
 
 ## _Description_
+> [Click Here to View a Preview of UI](https://github.com/Lo-GR/PierreBakery/blob/main/img/currentUI.PNG?raw=true)
+
 This an application built in C# with .NET 5.0 framework that will prompt the user through ordering Bread and Pastries then return those values and calculate the cost of each. On the business logic side, calculations are made automatically to account for deals and discounts.
 
 This is a practice project for practicing C#, SDK, .NET framework,MS TEst, and Classes for a course at Epicodus.
