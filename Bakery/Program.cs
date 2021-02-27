@@ -9,6 +9,8 @@ namespace Bakery
   {
     public static Bread breadOrder;
     public static Pastry pastryOrder;
+    public static int pastryInput;
+    public static int breadInput;
     public static void Main()
     {
       Console.WriteLine("Welcome to Pierre Bakery!");
@@ -17,12 +19,14 @@ namespace Bakery
       AskBread();
       AskPastry();
       Console.WriteLine("and with that, here are your order details:");
-
+      FinalOrder();
+      Console.WriteLine("Thank you for stopping by! Please press any key to exit.");
+      Console.ReadLine();
     }
     public static void AskBread()
     {
       Console.WriteLine("How many Breads would you like? We currently have a buy one get one free sale.");
-      int breadInput = int.Parse(Console.ReadLine());
+      breadInput = int.Parse(Console.ReadLine());
       if (breadInput == 0)
       {
         Console.WriteLine("No problem!");
@@ -40,8 +44,8 @@ namespace Bakery
     }
     public static void AskPastry()
     {
-      Console.WriteLine("How many Pastries would you like? We're currently running a buy 3 for 5$ deal.");
-      int pastryInput = int.Parse(Console.ReadLine());
+      Console.WriteLine("How many Pastries would you like? We're currently running a buy 3 for $5 deal.");
+      pastryInput = int.Parse(Console.ReadLine());
       if (pastryInput == 0)
       {
         Console.WriteLine("No problem!");
@@ -60,15 +64,26 @@ namespace Bakery
     }
     public static void FinalOrder()
     {
-      if(breadOrder.BreadNumber > 0)
+      int totalCost = 0;
+      if(breadInput > 0)
       {
         Console.WriteLine($"Bread Quantity: {breadOrder.BreadNumber}");
-        Console.WriteLine($"Cost of Bread: {breadOrder.BreadPrice}");
+        Console.WriteLine($"Cost of Bread: ${breadOrder.BreadPrice}");
+        totalCost += breadOrder.BreadPrice;
       }
-      if(pastryOrder.PastryNumber > 0)
+      if(pastryInput > 0)
       {
-        Console.WriteLine($"Pastry Quantity: {pastryOrder.PastryNumber}$");
-        Console.WriteLine($"Cost of Pastry: {pastryOrder.PastryPrice}$");
+        Console.WriteLine($"Pastry Quantity: {pastryOrder.PastryNumber}");
+        Console.WriteLine($"Cost of Pastry: ${pastryOrder.PastryPrice}");
+        totalCost += pastryOrder.PastryPrice;
+      }
+      if (pastryInput <= 0 && breadInput <= 0)
+      {
+        Console.WriteLine("It looks like you did not order anything this time. Please come again!");
+      }
+      else
+      {
+        Console.WriteLine($"Your total cost for this order is ${totalCost}");
       }
     }
   }
