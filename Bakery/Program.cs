@@ -7,6 +7,8 @@ namespace Bakery
 {
   public class Program
   {
+    public static Bread breadOrder;
+    public static Pastry pastryOrder;
     public static void Main()
     {
       Console.WriteLine("Welcome to Pierre Bakery!");
@@ -14,6 +16,8 @@ namespace Bakery
       Console.WriteLine($"The current price for Bread is {Bread.ReturnBaseBreadPrice()} dollars each and the current price of Pastry is {Pastry.ReturnBasePastryPrice()} dollars each.");
       AskBread();
       AskPastry();
+      Console.WriteLine("and with that, here are your order details:");
+
     }
     public static void AskBread()
     {
@@ -30,13 +34,13 @@ namespace Bakery
       }
       else
       {
-        Bread breadOrder = new Bread(breadInput);
+        breadOrder = new Bread(breadInput);
         Console.WriteLine($"Perfect! You added {breadInput} loaves of bread to your order.");
       }
     }
     public static void AskPastry()
     {
-      Console.WriteLine("How many Pastries would you like? We're currently running a buy 3 for $5 deal.");
+      Console.WriteLine("How many Pastries would you like? We're currently running a buy 3 for 5$ deal.");
       int pastryInput = int.Parse(Console.ReadLine());
       if (pastryInput == 0)
       {
@@ -49,10 +53,17 @@ namespace Bakery
       }
       else
       {
-        Pastry pastryOrder = new Pastry(pastryInput);
-        Console.WriteLine($"Perfect! You added {pastryInput} loaves of bread to your order.");
+        pastryOrder = new Pastry(pastryInput);
+        Console.WriteLine($"Perfect! You added {pastryInput} pastries to your order."); 
+        
       }
     }
-    
+    public static void FinalOrder()
+    {
+      if(breadOrder.BreadNumber > 0)
+      {
+        
+      }
+    }
   }
 }
